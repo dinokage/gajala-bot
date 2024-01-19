@@ -532,3 +532,165 @@ ChatInputCommandInteraction {
   }
 }
 ```
+## search result for yt url
+
+```js
+SearchResult {
+  player: <ref *1> Player {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: undefined,
+    requiredEvents: [ 'error' ],
+    id: '1197811940408168448',
+    nodes: GuildNodeManager {
+      player: [Circular *1],
+      cache: [Collection [Map]]
+    },
+    voiceUtils: VoiceUtils { player: [Circular *1], cache: Collection(0) [Map] {} },
+    extractors: ExtractorExecutionContext {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      requiredEvents: [Array],
+      player: [Circular *1],
+      store: [Collection [Map]],
+      [Symbol(kCapture)]: false
+    },
+    events: PlayerEventsEmitter {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      requiredEvents: [Array],
+      [Symbol(kCapture)]: false
+    },
+    routePlanner: null,
+    client: Client {
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      options: [Object],
+      rest: [REST],
+      ws: [WebSocketManager],
+      actions: [ActionsManager],
+      voice: [ClientVoiceManager],
+      shard: null,
+      users: UserManager {},
+      guilds: GuildManager {},
+      channels: ChannelManager {},
+      sweepers: [Sweepers],SearchResult {
+  player: <ref *1> Player {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: undefined,
+    requiredEvents: [ 'error' ],
+    id: '1197811940408168448',
+    nodes: GuildNodeManager {
+      player: [Circular *1],
+      cache: [Collection [Map]]
+    },
+    voiceUtils: VoiceUtils { player: [Circular *1], cache: Collection(0) [Map] {} },
+    extractors: ExtractorExecutionContext {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      requiredEvents: [Array],
+      player: [Circular *1],
+      store: [Collection [Map]],
+      [Symbol(kCapture)]: false
+    },
+    events: PlayerEventsEmitter {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      requiredEvents: [Array],
+      [Symbol(kCapture)]: false
+    },
+    routePlanner: null,
+    client: Client {
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      options: [Object],
+      rest: [REST],
+      ws: [WebSocketManager],
+      actions: [ActionsManager],
+      voice: [ClientVoiceManager],
+      shard: null,
+      users: UserManager {},
+      guilds: GuildManager {},
+      channels: ChannelManager {},
+      sweepers: [Sweepers],
+      presence: [ClientPresence],
+      user: [ClientUser],
+      application: [ClientApplication],
+      readyTimestamp: 1705651022658,
+      player: [Circular *1],
+      commands: [Collection [Map]],
+      [Symbol(kCapture)]: true
+    },
+    options: {
+      lockVoiceStateHandler: false,
+      blockExtractors: [],
+      blockStreamFrom: [],
+      connectionTimeout: 20000,
+      lagMonitor: 30000,
+      queryCache: [QueryCache],
+      useLegacyFFmpeg: false,
+      ytdlOptions: [Object]
+    },
+    [Symbol(kCapture)]: false
+  },
+  _data: {
+    query: 'https://youtu.be/BblraEtrFLI?si=ZdBOXWp8b6FUxHph',
+    queryType: 'youtubeVideo',
+    playlist: null,
+    tracks: [ [Track] ],
+    extractor: YoutubeExtractor {
+      context: [ExtractorExecutionContext],
+      options: {},
+      createBridgeQuery: [Function: createBridgeQuery],
+      protocols: [Array],
+      _stream: [AsyncFunction: _stream],
+      _ytLibName: 'youtube-ext'
+    },
+    requestedBy: undefined
+  }
+}
+      presence: [ClientPresence],
+      user: [ClientUser],
+      application: [ClientApplication],
+      readyTimestamp: 1705651022658,
+      player: [Circular *1],
+      commands: [Collection [Map]],
+      [Symbol(kCapture)]: true
+    },
+    options: {
+      lockVoiceStateHandler: false,
+      blockExtractors: [],
+      blockStreamFrom: [],
+      connectionTimeout: 20000,
+      lagMonitor: 30000,
+      queryCache: [QueryCache],
+      useLegacyFFmpeg: false,
+      ytdlOptions: [Object]
+    },
+    [Symbol(kCapture)]: false
+  },
+  _data: {
+    query: 'https://youtu.be/BblraEtrFLI?si=ZdBOXWp8b6FUxHph',
+    queryType: 'youtubeVideo',
+    playlist: null,
+    tracks: [ [Track] ],
+    extractor: YoutubeExtractor {
+      context: [ExtractorExecutionContext],
+      options: {},
+      createBridgeQuery: [Function: createBridgeQuery],
+      protocols: [Array],
+      _stream: [AsyncFunction: _stream],
+      _ytLibName: 'youtube-ext'
+    },
+    requestedBy: undefined
+  }
+}
+
+```
