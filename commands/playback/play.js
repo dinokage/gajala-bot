@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require("@discordjs/builders")
-const { MessageEmbed } = require("discord.js")
+const { EmbedBuilder } = require("discord.js")
 const { QueryType } = require("discord-player")
 
 module.exports = {
@@ -19,11 +19,11 @@ module.exports = {
             )
             .addSubcommand(subcommand => 
                 subcommand
-                .setName("playlsit")
+                .setName("playlist")
                 .setDescription("playlist URL form YT")
                 .addStringOption(option => 
                     option
-                    .setName("url")
+                    .setName("playlist-url")
                     .setDescription("URL of playlist")
                     // .setRequired(true)
                     )
@@ -33,7 +33,7 @@ module.exports = {
                 .setName("song")
                 .setDescription("play from URL")
                 .addStringOption(option => 
-                    option.setName("url")
+                    option.setName("song-url")
                     .setDescription("URL of song")
                     // .setRequired(true)
                     )
@@ -48,15 +48,29 @@ module.exports = {
 
         // console.log(res)
 
-        console.log(interaction.user.voice)
+        // console.log(interaction.user.voice);
 
-        console.log(interaction.user.avatarURL())
+        // console.log(interaction.user.avatarURL());
 
-        // let embed = new MessageEmbed();
+        let embed = new EmbedBuilder();
 
         const subCommand = interaction.options.getSubcommand();
 
-        await interaction.reply(interaction.user.avatarURL());
+        switch(subCommand) {
+            case "song":
+                {let songURL = interaction.options.getString("song-url");
+                let songResult = await client.player.search(songURL);
+                client.player.play(interaction.member.voice.channel,songResult)
+                console.log(songResult);
+                break;}
+            case "playlist":
+                {let playlistURL = interaction.options.getString("playlist-url");
+                // console.log(playlistURL);
+                break;}
+            default:
+                console.log("issue");
+        }
+        await interaction.reply(`sulli ${subCommand}`)
 
 	},
 };
